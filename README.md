@@ -58,3 +58,8 @@ To customize the project, you can modify the following files:
 index.html: Update the structure and content of the web page.
 style.css: Change styles, colors, and layout.
 script.js: Modify data fetching, processing, and chart rendering logic.
+
+### Acknowledgements
+Coalition Technologies for providing the API
+Chart.js for the charting library
+Google Fonts for the typography
