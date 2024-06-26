@@ -1,0 +1,683 @@
+body {
+    position: relative;
+    width: 1600px;
+    height: 1195px;
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 18px;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    top: 18px;
+    width: 1564px;
+    height: 72px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 70px;
+    box-sizing: border-box;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 48px;
+    margin-right: 212px;
+  
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    font: normal normal bold 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    background: #01F0D0 0% 0% no-repeat padding-box;
+    border-radius: 41px;
+}
+
+.nav-icon {
+    margin-right: 8px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+   
+}
+
+.profile-img {
+    border-radius: 50%;
+    height: 44px;
+    margin-right: 8px;
+}
+
+.profile-text {
+    margin-right: 19px;
+    padding-right: 14px;
+    border-right: 2px solid  #F6F7F8 ;
+   
+}
+
+.profile-name {
+    font-weight: bold;
+    color: #072635;
+    text-align: left;
+    font: normal normal bold 14px/19px Manrope;
+    letter-spacing: 0px;
+    height: 19px;
+    margin-bottom: 0;
+}
+
+.profile-title {
+    height: 19px;
+    text-align: left;
+    font: normal normal normal 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #707070;
+    margin-top: 0;
+}
+
+.settings-icon {
+    cursor: pointer;
+    margin-right: 15.71px;
+    height: 20px;
+    
+}
+.v-icon{
+    width: 4px;
+    height: 18px;
+    cursor: pointer;
+}
+
+
+
+.sidebar {
+    position: absolute;
+    top: 122px;
+    left: 18px;
+    width: 367px;
+    height: 1054px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 4px;
+    box-sizing: border-box; 
+}
+
+
+
+.sidebar-title {
+    font-weight: 900;
+    font-size: 24px;
+
+     margin-left: 16px;
+     margin-bottom: 40px;
+     
+    
+}
+.search-icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 209px;
+    cursor: pointer;
+}
+
+.patient-list {
+   
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+   
+    font: normal normal normal 14px/19px Manrope;
+   
+    color: #072635;
+    overflow-y: auto;
+    max-height: 941px;
+}
+
+.patient-list li {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 32px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.patient-list li.active {
+    background: #D8FCF7 0% 0% no-repeat padding-box;
+height: 80px;
+}
+
+.patient-list .patient-img1 {
+   
+    width: 48px; 
+    height: 48px; 
+    margin-left: 20px;
+    margin-right:12px ;
+}
+
+.patient-list div {
+    flex-grow: 1;
+}
+
+.patient-list div p {
+    margin: 0;
+    font-size: 14px;
+    
+    font-family: 'Manrope', sans-serif;
+}
+
+.patient-list div p.name {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.more-options {
+
+    width: 18px;
+    height: 4px; 
+    cursor: pointer;
+    margin-right: 20px;
+    
+}
+
+/* Custom scrollbar styles */
+.patient-list::-webkit-scrollbar {
+    width: 6px;
+    
+}
+
+.patient-list::-webkit-scrollbar-thumb {
+    background: #072635;
+    border-radius: 3px;
+    width: 6px;
+    height: 100px;
+    
+}
+
+.patient-list::-webkit-scrollbar-track {
+    background: #E3E4E6;
+    border-radius: 3px;
+    height: 941px;
+    
+}
+
+.main-content {
+    position: absolute;
+    top: 122px;
+    margin-left: 399px;
+    
+}
+
+.diagnosis-history {
+   padding: 20px;
+    width: 766px;
+    height: 673px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-sizing: border-box;
+    
+}
+
+.dh-title {
+    font-weight: bolder;
+    font-size: 24px;
+    color: #072635;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.blood-pressure-chart-container {
+    position: relative;
+    padding: 16px;
+    width: 726px;
+height: 298px;
+background: #F4F0FE 0% 0% no-repeat padding-box;
+border-radius: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.graph{
+    margin-top: 28px;
+    width: 447px;
+height: 214px;
+}
+.chart-header {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  
+    
+    
+}
+.expand-icon{
+    width: 11px;
+height: 6px;
+margin-left: 16px;
+cursor: pointer;
+}
+
+.chart-title {
+    
+    font-weight: 800;
+    font-size: 18px;
+    color: #072635;
+    margin: 0;
+
+}
+
+.chart-period {
+    font-size: 14px;
+    text-align: center;
+font: normal normal normal 12px/17px Manrope;
+letter-spacing: 0px;
+color: #072635;
+margin-left: 188px;
+}
+
+
+.blood-pressure-legend {
+    position: absolute;
+    top: 18px;
+    left: 502px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+.sys-item {
+   
+    justify-content: left;
+    margin-bottom:33px ;
+    
+}
+.dia-item {
+    
+    margin-top: 33px;
+    justify-content: left;  
+    border-top: 1px solid  #CBC8D4 ;
+    
+}
+.sys, .dia{
+ font-size: 14px;
+ font: normal normal normal 14px/19px Manrope;
+ letter-spacing: 0px;
+ color: #072635;
+ height: 19px;
+ 
+
+}
+
+.legend-color {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+margin-right: 4px;
+}
+
+.legend-color.systolic {
+    background: #E66FD2 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF;
+    
+}
+
+.legend-color.diastolic {
+    background: #8C6FE6 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF;}
+
+.systolic-value, .diastolic-value {
+
+    margin-top: 8px;
+    font-weight: 900;
+    font-size: 22px;
+    height: 30px;
+    color: #072635;
+}
+.arrow{
+   
+    width: 10px;
+height: 5px;
+    margin-right: 8px;
+}
+.additional-metrics {
+    display: flex;
+    justify-content: space-between;
+    height: 242px;
+}
+
+.metric {
+    text-align: center;
+    flex: 1;
+    padding: 16px;
+    background: #E0F3FA 0% 0% no-repeat padding-box;
+border-radius: 12px;
+    width: 228px;
+height: 242px;
+    margin: 0 10px;
+    box-sizing: border-box; 
+}
+.temperature{
+    background: #FFE6E9 0% 0% no-repeat padding-box;
+}
+.heart-rate{
+    background: #FFE6F1 0% 0% no-repeat padding-box;
+}
+.metric-icon {
+    display: flex;
+    width: 96px;
+    height: 96px;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.metric-name{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0%;
+    margin-top: 16px;
+}
+
+.metric-value {
+    margin: 0%;
+    display: flex;
+    font-weight: bolder;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #072635;
+}
+
+.metric-level {
+    font-size: 14px;
+    font-weight: 300;
+    color: #707070;
+    text-align: left;
+    margin-top: 17px;
+}
+
+.metricarrow{
+    width: 10px;
+height: 5px;
+margin-right: 8px;
+}
+
+.diagnostic-list {
+    
+    width: 766px;
+    height: 349px;
+    margin-top: 32px;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-sizing: border-box;
+   
+    
+}
+
+.dl-title {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+margin-bottom:40px ;
+}
+
+.diagnostic-table {
+    width: 100%;
+    border-collapse: collapse;
+    
+   
+}
+.diagnostic-table-container{
+    overflow-y: auto;
+    max-height: 236px;
+}
+
+.diagnostic-table th {
+    width: 726px;
+height: 48px;
+    padding: 14px;
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+    
+    text-align: left;
+    font: normal normal bold 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    box-sizing: border-box; 
+}
+.diagnostic-table td {
+    
+    padding: 16px;
+    border-bottom: 1px solid  #F6F7F8 ;
+    text-align: left;
+    font: normal normal 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    box-sizing: border-box; 
+    
+}
+
+.diagnostic-table-container::-webkit-scrollbar {
+   
+    width: 6px;
+}
+
+.diagnostic-table-container::-webkit-scrollbar-thumb {
+    height: 100px;
+    width: 6px;
+    background: #072635 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+  
+}
+
+.diagnostic-table-container::-webkit-scrollbar-track {
+    width: 6px;
+    background: #E3E4E6 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    height: 178px;
+}
+
+.rightside {
+    position: absolute;
+    top: 108px;
+    margin-left: 1198px;
+}
+
+.patient-details {
+    width: 367px;
+    height: 740px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+}
+
+.patient-img {
+   margin-left: 83px;
+    margin-top: 32px;
+    width: 200px;
+    height: 200px;
+}
+
+.patient-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    text-align: center;
+    font: normal normal 800 24px/33px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+}
+
+.patient-info-group {
+    text-align: left;
+}
+
+.patient-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.info-icon {
+    width: 42px;
+    height: 42px;
+    margin-right: 16px; 
+    margin-left: 20px;
+}
+
+.patient-info-label {
+    font-size: 14px;
+    text-align: left;
+font: normal normal medium 14px/19px Manrope;
+letter-spacing: 0px;
+color: #072635;
+text-transform: capitalize;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.patient-info-value {
+    font-size: 14px;
+    font-weight: bolder;
+    text-align: left;
+font: normal normal bold 14px/19px Manrope;
+letter-spacing: 0px;
+color: #072635;
+text-transform: capitalize;
+    margin: 0;
+}
+.info-button {
+    width: 220px;
+    height: 41px;
+    border: none;
+    background: #01F0D0 0% 0% no-repeat padding-box;
+    border-radius: 41px;
+    cursor: pointer;
+    font: normal normal bold 14px/19px Manrope;
+    letter-spacing: 0px;
+    margin-top: 40px;
+    margin-bottom: 32px;
+    margin-left: 73px;
+}
+
+.info-button:hover {
+    background: #01D0B0;
+}
+
+.lab-results {
+    
+    position: absolute;
+    padding: 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    margin-top: 32px;
+    width: 367px;
+    height: 296px; 
+    box-sizing: border-box;
+    
+}
+
+.lr-title {
+    text-align: left;
+    font-weight: bold;
+    font: normal normal 900 24px/33px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.lab-list {
+    list-style: none;
+    padding: 0;
+    font-size: 13px;
+    text-align: left;
+    font: normal normal normal 13px/18px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    text-transform: capitalize;
+    overflow-y: auto;
+    max-height: 207px;
+
+    
+    
+}
+
+.lab-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 16px;
+    padding-left: 16px;
+    
+height: 40px;
+margin-bottom: 5px;
+
+}
+
+.lab-item.active {
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+    
+}
+
+.download-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+
+.lab-list::-webkit-scrollbar {
+   
+    width: 6px;
+}
+
+.lab-list::-webkit-scrollbar-thumb {
+    height: 51px;
+    width: 6px;
+    background: #072635 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+  
+}
+
+.lab-list::-webkit-scrollbar-track {
+    width: 6px;
+    background: #E3E4E6 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    height: 207px;
+}
